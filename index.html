@@ -1,55 +1,149 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - ezjarrezjarr Games</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    h2 { color: #222; margin-top: 24px; }
-    .badge { display: inline-block; background: #eef2ff; color: #4338ca; padding: 4px 8px; border-radius: 4px; font-size: 13px; margin-bottom: 20px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #666; font-size: 14px; }
+    :root {
+      --primary: #4338ca;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --bg: #ffffff;
+      --card-bg: #f9fafb;
+      --border: #e5e7eb;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      color: #111827;
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #eef2ff;
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    p {
+      margin: 8px 0 16px;
+      color: var(--text);
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    li strong {
+      color: #111827;
+    }
+    .app-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 10px;
+      list-style: none;
+      padding-left: 0;
+      margin: 14px 0 24px;
+    }
+    .app-list li {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: #6b7280;
+      font-size: 14px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>개인정보처리방침 (Privacy Policy)</h1>
-  <div class="badge">최종 수정일: 2026년 8월 30일</div>
+  <h1>Privacy Policy</h1>
+  <div class="badge">Last Updated: August 30, 2026</div>
 
-  <p><strong>ezjarrezjarr</strong>(이하 "개발자")는 사용자의 개인정보를 중요시하며, 구글 플레이 개발자 정책 및 관련 법령을 준수합니다. 본 방침은 개발자가 배포하는 모든 모바일 게임 애플리케이션에 공통 적용됩니다.</p>
+  <p><strong>ezjarrezjarr</strong> ("Developer", "we", "us", or "our") is dedicated to protecting the privacy of our users. This Privacy Policy outlines how our mobile applications handle user data in full compliance with Google Play Developer Policies and applicable global data privacy regulations.</p>
 
-  <h2>1. 적용 대상 애플리케이션</h2>
-  <ul>
-    <li>수박 파티(Watermelon Party)</li>
-    <li>프루티 파이브 (FruityFive)</li>
-    <li>프루티 오셀로 (FruityOthello)</li>
-    <li>네온 퍼트 (NeonPutt)</li>
-    <li>마블 레이스 (MarbleRace)</li>
-    <li>X 마인스위퍼 (XMineSweeper)</li>
+  <h2>1. Applicable Applications</h2>
+  <p>This Privacy Policy applies to the following mobile applications developed and distributed by ezjarrezjarr:</p>
+  <ul class="app-list">
+    <li>Watermelon Party</li>
+    <li>FruityFive</li>
+    <li>FruityOthello</li>
+    <li>NeonPutt</li>
+    <li>MarbleRace</li>
+    <li>XMineSweeper</li>
   </ul>
 
-  <h2>2. 수집하는 개인정보 항목</h2>
-  <p>본 개발사의 모든 게임은 <strong>이름, 전화번호, 이메일, 주소, 금융정보 등 어떠한 개인식별정보(PII)도 직접 수집하거나 저장하지 않습니다.</strong> 회원가입이나 로그인 절차 없이 모든 기능을 무료로 이용하실 수 있습니다.</p>
+  <h2>2. Collection and Use of Personal Information</h2>
+  <p>Our applications <strong>do not collect, store, or transmit any Personally Identifiable Information (PII)</strong>, including but not limited to real names, email addresses, phone numbers, physical addresses, biometric data, or payment information. Users can enjoy all gameplay features without any account creation or registration process.</p>
 
-  <h2>3. 기기 로컬 저장소 사용 안내</h2>
-  <p>게임의 진행 상태(최고 점수, 클리어 단계, 게임 환경 설정 등)는 오직 <strong>이용자의 기기 내부 저장소에만 보관</strong>되며, 앱을 삭제할 경우 함께 소멸됩니다.</p>
+  <h2>3. Device Local Storage</h2>
+  <p>Game progress, achievements, high scores, stage unlocks, and in-game preferences are stored <strong>strictly on your local device storage</strong>. This data is entirely controlled by you and will be permanently removed if you uninstall the application or clear app data via your device settings.</p>
 
-  <h2>4. 제3자 서비스 및 외부 네트워크 통신</h2>
+  <h2>4. Third-Party Services & Network Communication</h2>
   <ul>
-    <li>글로벌 랭킹 리더보드 서비스 제공을 위해 Supabase 데이터베이스 서버와 통신합니다. 이 과정에서 사용자가 직접 설정한 국가 코드, 임의 생성된 익명 ID, 달성 점수만이 전송 및 저장되며, 개인정보는 포함되지 않습니다.</li>
-    <li>외부 서버 통신 없이 100% 기기 내 로컬 환경에서 단독 구동됩니다.</li>
+    <li>
+      <strong>Leaderboard-Supported Games (Watermelon Party, NeonPutt, MarbleRace, XMineSweeper):</strong>
+      To provide the optional global leaderboard ranking feature, these games communicate with Supabase database servers. The data transmitted and stored is strictly non-identifiable and limited to: a randomly generated anonymous user ID, a user-selected country code, and achieved game scores. No personal information or hardware identifiers are collected or linked.
+    </li>
+    <li>
+      <strong>Offline Standalone Games (FruityFive, FruityOthello):</strong>
+      These games operate 100% locally on your device without any external network communication, backend servers, or third-party data transmission.
+    </li>
   </ul>
 
-  <h2>5. 아동 개인정보 보호</h2>
-  <p>본 개발사의 게임은 만 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+  <h2>5. Children's Privacy (COPPA Compliance)</h2>
+  <p>Our applications are designed for general audiences and do not knowingly collect or solicit any personal information from children under the age of 13 (or under the applicable age of digital consent in your jurisdiction). If you believe that any information has been inadvertently collected, please contact us immediately, and we will take prompt action to remove it.</p>
 
-  <h2>6. 개인정보 보호책임자 및 문의처</h2>
-  <p>개인정보 처리 및 정책에 관한 문의사항이 있으실 경우 아래의 연락처로 문의해 주시기 바랍니다.</p>
+  <h2>6. Security</h2>
+  <p>We prioritize the security of the minimal gameplay data handled. All network communications for leaderboard features utilize secure, encrypted HTTPS protocols.</p>
+
+  <h2>7. Changes to This Privacy Policy</h2>
+  <p>We may periodically update this Privacy Policy to reflect changes in our games, features, or relevant regulations. Any modifications will be posted on this page with an updated revision date.</p>
+
+  <h2>8. Contact Information</h2>
+  <p>If you have any questions, comments, or concerns regarding this Privacy Policy or our privacy practices, please contact us at:</p>
   <ul>
-    <li>개발자명: ezjarrezjarr</li>
-    <li>이메일: <a href="mailto:ezjarrezjarr@gmail.com">ezjarrezjarr@gmail.com</a></li>
+    <li><strong>Developer:</strong> ezjarrezjarr</li>
+    <li><strong>Email:</strong> <a href="mailto:ezjarrezjarr@gmail.com">ezjarrezjarr@gmail.com</a></li>
   </ul>
 
   <div class="footer">
